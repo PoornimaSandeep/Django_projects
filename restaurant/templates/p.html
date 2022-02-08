@@ -1,0 +1,13 @@
+
+  <div class="nav2">
+    {% for product in productss %}
+    <div class="column2">
+      <a href="{% url 'burger' %}" > <img src="{{product.image.url}}"  ></a>
+        <h5 class="card-title">Product name:{{ product.name }}</h5>
+        <h6 >Product price:{{product.price}}</h6>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
